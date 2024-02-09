@@ -23,6 +23,8 @@ gem uninstall bundler -a -x || true
 # Install specific version of Bundler
 gem install bundler -v 2.5.5
 
+gem env
+
 # Verify installations
 ruby -v # Should show the version of Ruby installed. You aim for Ruby 3.0, but this will show the latest version installed via pacman.
 bundle -v # Should show Bundler version 2.5.5
