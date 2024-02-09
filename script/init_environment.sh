@@ -23,7 +23,7 @@ gem uninstall bundler -a -x || true
 # Install specific version of Bundler
 gem install bundler -v 2.5.5
 
-gem env
+export PATH="$PATH:/github/home/.local/share/gem/ruby/3.0.0/bin"
 
 # Verify installations
 ruby -v # Should show the version of Ruby installed. You aim for Ruby 3.0, but this will show the latest version installed via pacman.
